@@ -1,0 +1,77 @@
+aside {
+  flex: 3;
+}
+
+aside ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+aside ul {
+  padding: 30px;
+}
+
+aside ul li {
+  background: #3C4043;
+  height: auto;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+aside ul li header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 2px;
+}
+
+header div#content {
+  padding: 0 15px;
+}
+header div#content strong {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: bold;
+}
+header div#content p {
+  margin: 10px 0 0 0;
+  color: #D3D3D3;
+  max-lines: 3;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+
+header div#log img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+aside ul li div#body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 5px 0 2px;
+}
+
+ul li div#body div#rates {
+  position: relative;
+  padding: 10px;
+}
+
+div#body div#rates strong,
+div#body div#rates label {
+  color: #3B5999;
+}
+
+div#body button {
+  position: relative;
+  width: 100px;
+  height: 30px;
+  background: #74CBD0;
+  border: 0;
+  border-radius: 2px;
+  font-weight: bold;
+}
