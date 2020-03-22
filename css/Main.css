@@ -16,3 +16,20 @@ main input#search {
   padding: 10px;
   font-size: 16px;
 }
+
+main div#result-search {
+  position: relative;
+  top: 70px;
+}
+
+main div#result-search ul {
+  padding: 10px;
+}
+
+div#result-search ul li {
+  background: skyblue;
+  border-radius: 2px;
+  padding: 4px 0 0 4px;
+  border: 0;
+  border-bottom: 1px solid #FFF;
+}
