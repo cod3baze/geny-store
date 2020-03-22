@@ -3,6 +3,8 @@
   > Uma expressão regular é uma sequência de caracteres que forma um padrão de pesquisa.
   *O padrão de pesquisa pode ser usado para operações de pesquisa e substituição de texto.*
 
+  ------------------------------------------------------------------------------
+
 - Síntax
   `/pattern/modifiers;`
 - Exemplo
