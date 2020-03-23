@@ -24,4 +24,38 @@ const handleSearch = () => {
     handle_insert_element(index)
   }
 }
-searchElement.addEventListener('change', handleSearch)
+// searchElement.addEventListener('change', handleSearch)
+
+handle_blank = (ul) => {
+  if(ul.innerText === "") {
+    let item = document.createElement('li')
+    let no = document.createTextNode("Do not have!")
+    item.appendChild(no)
+
+    ul.appendChild(item)
+  }
+}
+
+const handle_filter = () => {
+  var filter, ul, li, a, i, txtValue;
+
+  input = document.querySelector('input#search');
+  filter = input.value.toUpperCase();
+
+  ul = document.getElementById("list-item");
+  handle_blank(ul)
+  li = ul.getElementsByTagName("li");
+
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent ?? a.innerText;
+    console.log(txtValue)
+
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+searchElement.addEventListener('keyup', handle_filter)

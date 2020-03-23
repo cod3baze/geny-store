@@ -2,10 +2,12 @@ main {
   flex: 1;
   background: #26242E;
   width: 340px;
-  height: 100%;
+  min-height: 100%;
 }
 
 main input#search {
+  overflow-x: hidden;
+  overflow-y: auto;
   background: #3C4043;
   position: relative;
   top: 40px;
@@ -20,6 +22,11 @@ main input#search {
 main div#result-search {
   position: relative;
   top: 70px;
+}
+
+main div#result-search h3 {
+  margin-left: 10px;
+  color: #444;
 }
 
 main div#result-search ul {

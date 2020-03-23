@@ -2,14 +2,20 @@ aside {
   flex: 3;
 }
 
+/* ¨¨¨¨¨¨¨¨¨¨¨¨ */
+
 aside ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+  padding: 30px;
 }
 
-aside ul {
-  padding: 30px;
+@media only screen and (max-width: 670px) {
+  aside ul {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 aside ul li {
@@ -74,4 +80,9 @@ div#body button {
   border: 0;
   border-radius: 2px;
   font-weight: bold;
+}
+div#body button:hover {
+  background: rgb(67, 113, 116);
+  color: #D6D6D6;
+  cursor: pointer;
 }
